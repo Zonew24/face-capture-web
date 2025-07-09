@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Đăng ký khuôn mặt</title>
+</head>
+<body>
+  <h2>Đăng ký nhận diện khuôn mặt</h2>
+  <form id="faceForm">
+    MSSV: <input type="text" name="mssv" required><br>
+    Họ tên: <input type="text" name="name" required><br><br>
+
+    <video id="video" width="320" height="240" autoplay></video><br><br>
+    <div id="captures">
+      <button type="button" onclick="capture('front')">Chụp Chính diện</button>
+      <button type="button" onclick="capture('left')">Trái</button>
+      <button type="button" onclick="capture('right')">Phải</button>
+      <button type="button" onclick="capture('up')">Trên</button>
+      <button type="button" onclick="capture('far')">Xa/Gần</button>
+    </div><br>
+
+    <input type="submit" value="Gửi dữ liệu">
+  </form>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
